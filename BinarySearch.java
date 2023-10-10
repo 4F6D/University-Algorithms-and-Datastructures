@@ -8,16 +8,17 @@ public class BinarySearch {
             System.out.println("Liste ist leer!");
         }
         else if(lookFor < pointer) {
+            System.out.println(pointer);
             binarySearch(min, pointer-1, lookFor);
         }
         else if(lookFor > pointer) {
+            System.out.println(pointer);
             binarySearch(pointer+1,max,lookFor);
         }
-        else {
+        else if(lookFor == pointer){
             System.out.println("Suche endet erfolgreich!");
             System.out.println(pointer);
         }
-
     }
 
     public static void main(String[] args) {
