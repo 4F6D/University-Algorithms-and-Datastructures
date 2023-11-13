@@ -22,6 +22,6 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        binarySearch(1,10000, 333);
+        binarySearch(1,10000, 126);
     }
 }
