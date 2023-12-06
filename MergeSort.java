@@ -1,16 +1,17 @@
 public class MergeSort {
 
     private static void mergeSort(int[] array) {
-        // Cache length of array
+        // Die Länge des Arrays zwischenspeichern
         int length = array.length;
         if(length <= 1) return;     // Base case
 
+        // Die Mitte des Arrays bestimmen
         int middle = length/2;
         int[] leftArray = new int[middle];
         int[] rightArray = new int[length-middle];
 
-        int i = 0;  // Left array
-        int j = 0;  // Right array
+        int i = 0;  // Linkes Array
+        int j = 0;  // Rechtes Array
 
         for(; i < length; i++) {
             if(i < middle) {
@@ -55,7 +56,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] testArray = {9,7,8,3,2,1};
+        int[] testArray = {5,2,4,8,1,9,7,3,6};
 
         mergeSort(testArray);
 
