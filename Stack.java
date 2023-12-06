@@ -1,6 +1,6 @@
 public class Stack {
 
-    // Don't need to be final
+    // Don't need to be final is just cleaner
     private final int[] arr;
     private final int size;
     private int topElement;
@@ -32,14 +32,17 @@ public class Stack {
         }
     }
 
+    // Return if stack is empty or not
     public boolean isEmpty() {
         return topElement <= -1;
     }
 
+    // Return if stack is full or not
     public boolean isFull() {
         return topElement == size-1;
     }
 
+    // Return the top stack element
     public int showTop() {
         if(isEmpty()) {
             return -1;
